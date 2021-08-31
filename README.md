@@ -1,1 +1,1 @@
-# php-project-blogsite-bogarithm
+# PHP PROJECT BLOGSITE `BOGARITHM`
