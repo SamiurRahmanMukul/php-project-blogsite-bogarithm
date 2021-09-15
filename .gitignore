@@ -18,4 +18,4 @@ bin-release/
 # information for Eclipse / Flash Builder.
 
 # database handling files
-# /src/database/dbh.inc.php
+/src/database/dbh.inc.php
