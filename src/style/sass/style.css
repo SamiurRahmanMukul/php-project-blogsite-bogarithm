@@ -1,7 +1,4 @@
-/* =============== INCLUDE PARTIALS =============== */
-/* =============== COLORS =============== */
-/* =============== TRANSITIONS =============== */
-/* =============== INCLUDE PARTIALS =============== */
+/* =============== IMPORT VARIABLE & UNIVERSAL SELECTOR =============== */
 /* =============== COLORS =============== */
 /* =============== TRANSITIONS =============== */
 /* =============== GOOGLE FONTS =============== */
@@ -19,8 +16,8 @@
 }
 
 * html body {
-  font-family: "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #ffffff;
+  font-family: "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+  background-color: #e0dfdb;
 }
 
 /* =============== PRE TAG-SELECTORS =============== */
@@ -56,130 +53,5 @@ li {
   color: var(--gray-color);
   font-family: cursive;
   font-size: 14px;
-}
-
-/* =============== HEADER SECTION =============== */
-header#header-section {
-  width: 100%;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-header#header-section #write-post:hover {
-  background-color: #0084ff;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-}
-
-header#header-section #write-post:hover a {
-  color: #ffffff;
-}
-
-header#header-section .header-container {
-  height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header#header-section .header-container .brand-info .brand-title {
-  font-size: 40px;
-  font-weight: bold;
-  color: #0275d8;
-  text-transform: uppercase;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-
-header#header-section .header-container .brand-info .brand-title:hover {
-  color: #0084ff;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-}
-
-header#header-section .header-container .navbar-toggle #btn-navbar-toggle {
-  font-size: 25px;
-  margin-top: 5px;
-  margin-left: 10px;
-  color: #000000;
-  background-color: #ffffff;
-  border: 3px solid #0275d8;
-  border-radius: 10%;
-  -webkit-border-radius: 10%;
-  -moz-border-radius: 10%;
-  -ms-border-radius: 10%;
-  -o-border-radius: 10%;
-  cursor: pointer;
-}
-
-header#header-section .header-container .navbar-toggle #btn-navbar-toggle:hover {
-  color: #ffffff;
-  background-color: #0275d8;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-}
-
-header#header-section .header-container nav.header-navbar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header#header-section .header-container nav.header-navbar ul li a {
-  font-size: 20px;
-  color: #000000;
-  padding: 0 10px;
-}
-
-header#header-section .header-container nav.header-navbar ul li a:hover {
-  font-weight: bold;
-  color: #0084ff;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-}
-
-header#header-section .header-container nav.header-navbar ul .active {
-  color: #0275d8;
-}
-
-@media screen and (min-width: 660px) {
-  .navbar-toggle {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 660px) {
-  nav.header-navbar {
-    display: none;
-  }
 }
 /*# sourceMappingURL=style.css.map */
