@@ -7,7 +7,8 @@
     <!-- webpage title -->
     <title>Bogarithm / Home</title>
     <!-- external CSS -->
-    <link rel="stylesheet" href="./src/style/sass/style.css">
+    <!-- <link rel="stylesheet" href="./src/style/sass/style.css"> -->
+    <link rel="stylesheet" href="./src/style/sass/style.css?v=<?php echo time(); ?>">
     <!-- favicon -->
     <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
     <!-- unicons -->
@@ -15,6 +16,34 @@
 </head>
 <body>
     <!-- ========= HEADER START ========= -->
+    <header id="header-section">
+      <nav id="header-navbar">
+        <div class="nav-center">
+          <!-- nav header / branding & toggler -->
+          <div class="nav-header">
+            <!-- brand title -->
+            <a href="./index.php">
+              <h1 class="brand-title">Bogarithm</h1>
+            </a>
+
+            <!-- navbar toggle button -->
+            <button class="nav-toggle">
+              <i class="uil uil-bars"></i>
+            </button>
+          </div>
+
+          <!-- navbar links -->
+          <ul class="links">
+            <li><a href="./index.php" class="active-link">Home</a></li>
+            <li><a href="./src/pages/trending.php">Trending</a></li>
+            <li><a href="./src/pages/explore.php">Explore Us</a></li>
+            <li><a href="./src/pages/profile.php">Your Profile</a></li>
+            <li><a href="./src/pages/registration.php">Registration</a></li>
+            <li><a href="./src/pages/login.php">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <!-- ========= HEADER END ========= -->
 
     <!-- ========= MAIN / BODY START ========= -->
@@ -22,5 +51,8 @@
 
     <!-- ========= FOOTER START ========= -->
     <!-- ========= FOOTER END ========= -->
+
+    <!-- script / js -->
+    <script src="./src/js/responsive-navbar.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-/* =============== IMPORT VARIABLE & UNIVERSAL SELECTOR =============== */
+/* ========= IMPORT VARIABLE & UNIVERSAL SELECTOR ========= */
 /* =============== COLORS =============== */
 /* =============== TRANSITIONS =============== */
 /* =============== GOOGLE FONTS =============== */
@@ -53,5 +53,147 @@ li {
   color: var(--gray-color);
   font-family: cursive;
   font-size: 14px;
+}
+
+/* ========= IMPORT HEADER & NAVBAR STYLE ========= */
+header#header-section nav#header-navbar {
+  background-color: #ffffff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header#header-section nav#header-navbar .nav-center .nav-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.1rem;
+}
+
+header#header-section nav#header-navbar .nav-center .nav-header .nav-toggle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  background: transparent;
+  border-color: transparent;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+header#header-section nav#header-navbar .nav-center .nav-header .nav-toggle:hover {
+  color: #ffffff;
+  background-color: #007bff;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+header#header-section nav#header-navbar .nav-center .nav-header .brand-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+header#header-section nav#header-navbar .nav-center .nav-header .brand-title:hover {
+  color: #6c757d;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.links .active-link {
+  color: #007bff;
+}
+
+.links a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000000;
+  text-transform: capitalize;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.links a:hover {
+  color: #6c757d;
+  padding-left: 1.5rem;
+}
+
+.show-links {
+  height: 15rem;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-center .nav-header {
+    padding: 0;
+  }
+  .nav-center .nav-header .nav-toggle {
+    display: none;
+  }
+  .links {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
 }
 /*# sourceMappingURL=style.css.map */
